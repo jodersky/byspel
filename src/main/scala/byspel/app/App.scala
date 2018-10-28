@@ -30,7 +30,8 @@ trait App {
     case head :: _ if Files.isReadable(Paths.get(head)) =>
       log(s"loading config from '${args(0)}'")
       import toml.Codecs._
-      Toml.parseAs[Config](Files.readString(Paths.get(head))) match {
+      val str = new String(Files.readAllBytes(Paths.get(head)), "utf-8")
+      Toml.parseAs[Config](str) match {
         case Left(err) =>
           log(s"fatal: syntax error in config file: $err")
           sys.exit(1)

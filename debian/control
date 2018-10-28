@@ -8,7 +8,7 @@ Homepage: https://github.com/jodersky/byspel
 
 Package: byspel
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, adduser, openjdk-11-jdk-headless, libdbd-sqlite3-perl, sqitch, sqlite3
+Depends: ${shlibs:Depends}, ${misc:Depends}, adduser, java8-sdk-headless, libdbd-sqlite3-perl, sqitch, sqlite3
 Recommends: nginx
 Description: Example Scala application
  This application demonstrates how Akka HTTP and Slick can be used to create
