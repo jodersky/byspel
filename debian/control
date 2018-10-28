@@ -1,0 +1,15 @@
+Source: byspel
+Section: net
+Priority: optional
+Maintainer: Jakob Odersky <jakob@odersky.com>
+Build-Depends: debhelper (>= 11), pandoc, sbt
+Standards-Version: 4.1.3
+Homepage: https://github.com/jodersky/byspel
+
+Package: byspel
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, adduser, openjdk-11-jdk-headless, libdbd-sqlite3-perl, sqitch, sqlite3
+Recommends: nginx
+Description: Example Scala application
+ This application demonstrates how Akka HTTP and Slick can be used to create
+ simple web applications, and how they can be packaged for debian.

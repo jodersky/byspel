@@ -1,0 +1,7 @@
+[http]
+address = "::"
+port = 8080
+
+[database]
+file = "target/main.db"
+sqitch_base = "."

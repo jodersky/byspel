@@ -1,0 +1,3 @@
+misc/byspel.conf etc/nginx/sites-available/
+misc/5xx.html usr/share/byspel/www/error/
+misc/no.svg usr/share/byspel/www/error/

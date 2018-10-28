@@ -1,0 +1,12 @@
+[Unit]
+Description=Example webapp built with Scala
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/byspel /etc/byspel.toml
+User=byspel
+Group=byspel
+
+[Install]
+WantedBy=multi-user.target
